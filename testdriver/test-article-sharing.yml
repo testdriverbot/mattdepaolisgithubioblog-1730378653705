@@ -1,0 +1,19 @@
+version: 4.0.78
+steps:
+  - prompt: Choose an article and click on a share icon.
+    commands:
+      - command: hover-text
+        text: Monte Carlo Tree Self-Refine
+        description: article title
+        action: click
+  - prompt: Choose an article and click on a share icon.
+    commands:
+      - command: hover-image
+        description: share icon in the article page
+        action: click
+  - prompt: >-
+      Assert that sharing options  # Use the content of the file from the
+      environment
+    commands:
+      - command: assert
+        expect: the LinkedIn sharing page is open
