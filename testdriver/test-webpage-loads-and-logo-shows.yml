@@ -1,0 +1,12 @@
+version: 4.0.78
+steps:
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the webpage displays "Articles"
+  - prompt: >-
+      Assert that the logo is visible at the top of the webpage.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the webpage displays the "M" logo at the top
