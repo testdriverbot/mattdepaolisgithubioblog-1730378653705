@@ -1,0 +1,16 @@
+version: 4.0.78
+steps:
+  - prompt: Locate the category filter options on the sidebar.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate the category filter options on the sidebar.
+    commands:
+      - command: scroll-until-text
+        text: Categories
+        direction: down
+  - prompt: Locate the category filter options on the sidebar.
+    commands:
+      - command: scroll-until-text
+        text: Categories
+        direction: down
