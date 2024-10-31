@@ -1,0 +1,20 @@
+version: 4.0.78
+steps:
+  - prompt: Hover over the main call to action button.
+    commands:
+      - command: hover-text
+        text: Open in Colab
+        description: main call to action button for the article
+        action: hover
+  - prompt: Click the main call to action button.
+    commands:
+      - command: hover-text
+        text: Open in Colab
+        description: main call to action button for the article
+        action: click
+  - prompt: >-
+      Assert that the expected action occurs or the correct page loads.  # Use
+      the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the page is a Colab notebook
