@@ -1,0 +1,17 @@
+version: 4.0.78
+steps:
+  - prompt: View an article entry on the main page.
+    commands:
+      - command: hover-text
+        text: Monte Carlo Tree Self-Refine
+        description: title of the first article
+        action: click
+  - prompt: >-
+      Assert that the date of publication is visible and correctly formatted.  #
+      Use the content of the file from the environment
+    commands:
+      - command: scroll-until-text
+        text: October 31, 2024
+        direction: down
+      - command: assert
+        expect: the date of publication is visible and correctly formatted
