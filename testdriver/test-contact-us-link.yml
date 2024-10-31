@@ -1,0 +1,15 @@
+version: 4.0.78
+steps:
+  - prompt: Locate the "Contact Us" link in the footer.
+    commands:
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
+  - prompt: Locate the "Contact Us" link in the footer.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate the "Contact Us" link in the footer.
+    commands:
+      - command: scroll
+        direction: down
